@@ -1,0 +1,6 @@
+Message[302] D:\PROGRAM\CLOCK_7SEGMENT.X\CLOCK_7SEGMENT_MAIN.ASM 56 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\PROGRAM\CLOCK_7SEGMENT.X\CLOCK_7SEGMENT_MAIN.ASM 57 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] D:\PROGRAM\CLOCK_7SEGMENT.X\CLOCK_7SEGMENT_MAIN.ASM 63 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Warning[224] D:\PROGRAM\CLOCK_7SEGMENT.X\CLOCK_7SEGMENT_MAIN.ASM 68 : Use of this instruction is not recommended.
+Message[305] D:\PROGRAM\CLOCK_7SEGMENT.X\CLOCK_7SEGMENT_MAIN.ASM 231 : Using default destination of 1 (file).
+Warning[205] D:\PROGRAM\CLOCK_7SEGMENT.X\CLOCK_7SEGMENT_MAIN.ASM 262 : Found directive in column 1. (END)
