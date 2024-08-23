@@ -1,4 +1,4 @@
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE  1
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE  1
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -57,7 +57,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0004   2???           00040     GOTO    ISR
                       00041     
 0005                  00042 setup:
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE  2
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE  2
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -116,7 +116,7 @@ Warning[224]: Use of this instruction is not recommended.
 001F   2???           00089     CALL    dynamic_con
                       00090     
 0020   2???           00091     GOTO    main_loop
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE  3
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE  3
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -175,7 +175,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00142     
 003B   0AA8           00143     INCF    digit,f     ;桁数をインクリメントして
 003C   3006           00144     MOVLW   D'6'
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE  4
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE  4
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -234,7 +234,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0062                  00195 DLP2:
 0062   0000           00196     NOP
 0063   0000           00197     NOP
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE  5
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE  5
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -266,7 +266,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0074   1D03           00221     BTFSS   STATUS,Z    ;countが1ならスキップ
 0075   2???           00222     GOTO    normal
                       00223     ;MOVLW   d'250'     ;256-250=6  1536us計測
-0076   30E0           00224     MOVLW   d'224'      ;256-185=71  1536us計測
+0076   30B9           00224     MOVLW   d'185'      ;256-185=71  1536us計測
 0077   2???           00225     GOTO    set_point
                       00226     
 0078                  00227 normal:
@@ -293,7 +293,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
 0082   303C           00248     MOVLW   d'60'
 0083   0222           00249     SUBWF   sec,w   ;60引いてみて
 0084   1D03           00250     BTFSS   STATUS,Z    ;0ならスキップ
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE  6
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE  6
 
 
 LOC  OBJECT CODE     LINE SOURCE TEXT
@@ -328,7 +328,7 @@ LOC  OBJECT CODE     LINE SOURCE TEXT
                       00277  
 Warning[205]: Found directive in column 1. (END)
 3F50                  00278 END
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE  7
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE  7
 
 
 SYMBOL TABLE
@@ -387,7 +387,7 @@ INTCON                            0000000B
 INTE                              00000004
 INTEDG                            00000006
 INTF                              00000001
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE  8
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE  8
 
 
 SYMBOL TABLE
@@ -446,7 +446,7 @@ RP0                               00000005
 RP1                               00000006
 RX9                               00000006
 RX9D                              00000000
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE  9
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE  9
 
 
 SYMBOL TABLE
@@ -505,7 +505,7 @@ TRISB4                            00000004
 TRISB5                            00000005
 TRISB6                            00000006
 TRISB7                            00000007
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE 10
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE 10
 
 
 SYMBOL TABLE
@@ -564,7 +564,7 @@ _INTRC_OSC_CLKOUT                 00003FFD
 _INTRC_OSC_NOCLKOUT               00003FFC
 _LP_OSC                           00003FEC
 _LVP_OFF                          00003F7F
-MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:28:14         PAGE 11
+MPASM 5.87           CLOCK_7SEGMENT_MAIN.ASM   8-22-2024  23:21:25         PAGE 11
 
 
 SYMBOL TABLE
@@ -583,6 +583,8 @@ _WDT_OFF                          00003FFB
 _WDT_ON                           00003FFF
 _XT_OSC                           00003FED
 __16F628A                         00000001
+__DEBUG                           
+__MPLAB_DEBUGGER_SIMULATOR        1
 a_pattern                         00000042
 count                             00000029
 countup                           00000081

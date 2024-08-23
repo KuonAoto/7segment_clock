@@ -99,7 +99,7 @@ ${OBJECTDIR}/Clock_7Segment_main.o: Clock_7Segment_main.asm  nbproject/Makefile-
 	@${MKDIR} "${OBJECTDIR}" 
 	@${RM} ${OBJECTDIR}/Clock_7Segment_main.o.d 
 	@${RM} ${OBJECTDIR}/Clock_7Segment_main.o 
-	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/Clock_7Segment_main.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_PK3=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/Clock_7Segment_main.lst\" -e\"${OBJECTDIR}/Clock_7Segment_main.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/Clock_7Segment_main.o\" \"Clock_7Segment_main.asm\" 
+	@${FIXDEPS} dummy.d -e "${OBJECTDIR}/Clock_7Segment_main.err" $(SILENT) -c ${MP_AS} $(MP_EXTRA_AS_PRE) -d__DEBUG -d__MPLAB_DEBUGGER_SIMULATOR=1 -q -p$(MP_PROCESSOR_OPTION)  -l\"${OBJECTDIR}/Clock_7Segment_main.lst\" -e\"${OBJECTDIR}/Clock_7Segment_main.err\" $(ASM_OPTIONS)    -o\"${OBJECTDIR}/Clock_7Segment_main.o\" \"Clock_7Segment_main.asm\" 
 	@${DEP_GEN} -d "${OBJECTDIR}/Clock_7Segment_main.o"
 	@${FIXDEPS} "${OBJECTDIR}/Clock_7Segment_main.o.d" $(SILENT) -rsi ${MP_AS_DIR} -c18 
 	
@@ -119,7 +119,7 @@ endif
 ifeq ($(TYPE_IMAGE), DEBUG_RUN)
 dist/${CND_CONF}/${IMAGE_TYPE}/Clock_7Segment.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk    
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
-	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION)  -w -x -u_DEBUG -z__ICD2RAM=1 -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_PK3=1 $(MP_LINKER_DEBUG_OPTION) -odist/${CND_CONF}/${IMAGE_TYPE}/Clock_7Segment.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
+	${MP_LD} $(MP_EXTRA_LD_PRE)   -p$(MP_PROCESSOR_OPTION)  -w -x -u_DEBUG -z__ICD2RAM=1 -m"${DISTDIR}/${PROJECTNAME}.${IMAGE_TYPE}.map"   -z__MPLAB_BUILD=1  -z__MPLAB_DEBUG=1 -z__MPLAB_DEBUGGER_SIMULATOR=1 $(MP_LINKER_DEBUG_OPTION) -odist/${CND_CONF}/${IMAGE_TYPE}/Clock_7Segment.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}  ${OBJECTFILES_QUOTED_IF_SPACED}     
 else
 dist/${CND_CONF}/${IMAGE_TYPE}/Clock_7Segment.X.${IMAGE_TYPE}.${OUTPUT_SUFFIX}: ${OBJECTFILES}  nbproject/Makefile-${CND_CONF}.mk   
 	@${MKDIR} dist/${CND_CONF}/${IMAGE_TYPE} 
